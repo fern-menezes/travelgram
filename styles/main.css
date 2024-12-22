@@ -9,4 +9,10 @@ main img{
     width: 286px;
     height: 286px;
     object-fit: cover;
+    transition: 0.2s;
+}
+
+main img:hover{
+    opacity: 0.7;
+
 }

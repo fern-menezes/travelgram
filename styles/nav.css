@@ -17,5 +17,10 @@ nav ul{
 nav ul li:last-child img{
     width: 40px;
     height: 40px;
+    transition: 0.5s;
+
+}
+nav ul li:last-child img:hover{
+    opacity: 0.7;
 
 }
