@@ -33,7 +33,7 @@ nav ul li:last-child img:hover{
 
 @media (width <= 60em){
     nav{
-        max-width: 0;
+        
         margin-inline: 0;
     }
     #primary-menu{
