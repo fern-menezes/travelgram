@@ -1,26 +1,43 @@
 nav{
+    max-width: 76rem;
+    margin-inline: auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     line-height: 0;
-    padding-block: 20px;
+    padding-block: 1.25rem;
 }
 nav ul{
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 2rem;
 
-    padding-block: 8px;
+    padding-block: 0.5rem;
 }
 nav ul li:last-child img{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     transition: 0.5s;
 
 }
 nav ul li:last-child img:hover{
     opacity: 0.7;
 
+}
+
+
+
+
+@media (width <= 60em){
+    nav{
+        max-width: 0;
+        margin-inline: 0;
+    }
+    #primary-menu{
+        display: flex;
+        gap: 0.50rem;
+    }
 }

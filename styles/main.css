@@ -1,6 +1,8 @@
 main{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
     padding-block: 24px;
 }
@@ -14,5 +16,13 @@ main img{
 
 main img:hover{
     opacity: 0.7;
+
+}
+
+@media (width <= 60em){
+    main img{
+        width: 350px;
+        height: 350px;
+    }
 
 }

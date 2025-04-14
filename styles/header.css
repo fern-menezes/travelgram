@@ -1,5 +1,7 @@
 header{
-    padding-block: 32px;
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-block: 2rem;
     font: var(--text-md);
 }
 header .container{
@@ -11,21 +13,21 @@ header .container{
 #profile{
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 
 #profile > div{
-    max-width: 384px;
+    max-width: 24rem;
 }
 
 #profile h1{
     font: var(--text-lg);
     color: var(--text-color-secondary);
-    margin-bottom: 8px;
+    margin-bottom: .5rem;
 }
 #profile img{
-    width: 176px;
-    height: 176px;
+    width: 11rem;
+    height: 11rem;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -35,13 +37,32 @@ header .container{
 
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 
-    width: 210px;
+    width: 13rem;
 }
 
 #info li{
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
+}
+
+
+@media (width <= 60em){
+    header{
+        max-width: 30rem ;
+        margin-inline: 0;
+    }
+    header .container, #profile{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    #profile img{
+        width: 8rem;
+        height: 8rem;
+    }
 }

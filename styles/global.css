@@ -13,8 +13,8 @@
     --text-color-secondary: #6C6C6C;
 
     --font-family: "Poppins", serif;
-    --text-lg: bold 32px/125% var(--font-family); 
-    --text: 16px/1.5 var(--font-family);
+    --text-lg: bold 2rem/125% var(--font-family); 
+    --text: 1rem/1.5 var(--font-family);
     --text-md: 14px/175% var(--font-family);
     --text-sm: 12x/175% var(--font-family);
 }
@@ -34,11 +34,16 @@ a:hover{
     text-decoration: underline;
 }
 .container{
-    padding-inline: 32px;
-    max-width: 1280px;
-    margin-inline: auto;
+    padding-inline: 2rem;
 }
 .bg-surface-color{
     background-color: var(--surface-color);
 }
 
+
+@media (width <= 60em){
+    .desktop-only{
+        display: none;
+    }
+
+}

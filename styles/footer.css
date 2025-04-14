@@ -1,12 +1,48 @@
 footer{
+    max-width: 76rem;
+    margin-inline: auto;
     display: flex;
-    gap: 24px;
-    padding-block: 24px;
-    margin-right: 370px;
-    margin-left: 310px;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-around;
+    
     font: 14px/150% var(--font-family);
    
 }
+footer .termos{
+    display: flex;
+    gap: 2rem;
+
+}
+
+footer .termos:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 footer span:nth-child(1){
     margin-right: auto;
+}
+
+@media (width <= 60em){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0.25rem;
+    }
+    footer .termos{
+        display: flex;
+        gap: 2rem;
+
+        & span:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    footer span:nth-child(1){
+        margin-right: 0;
+    }
 }
