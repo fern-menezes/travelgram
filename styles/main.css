@@ -5,6 +5,8 @@ main{
     justify-content: center;
     gap: 24px;
     padding-block: 24px;
+    max-width: 80rem;
+    margin-inline: auto;
 }
 
 main img{
